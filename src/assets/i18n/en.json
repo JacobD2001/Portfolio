@@ -1,0 +1,55 @@
+{
+  "SUBTITLE_404" : "404 Page not found",
+  "PARAGRAPH_404" : "The page you are looking for does not exist.",
+  "LINK_404" : "Go to home page",
+  "FOOTER" : "Try This",
+
+  "HOME_SUB_01" : "Hi i'm",
+  "HOME_SUB_02" : "Full Stack Web Developer",
+  "HOME_PARAGRAPH_01" : "I am a full stack web developer with experience developing",
+  "HOME_PARAGRAPH_02" : "web applications. I like to work in a team and learn new things.",
+  "BUTTON_HOME" : "Download CV",
+
+  "ABOUT_TITLE": "About Me",
+  "ABOUT_PARAGRAPH": "Hi, I'm John Gualteros, I'm a full stack web developer in different languages ​​and frameworks in detail in a later section. I'm passionate about programming. I'm from Colombia. I'm self-employed and enthusiastic about learning something new every day.",
+  "ABOUT_CLICK": "click here",
+  "STUDIES_TITLE": "Studies and Certifications",
+
+  "DETAILS_A_1": "Go Back",
+  "DETAILS_A_2": "Download",
+  "BUTTON_DETAILS": "See",
+
+  "TITLE_SKILLS": "Knowledge",
+  "SUBTITLE_SKILLS_01": "More about me",
+  "SUBTITLE_SKILLS_02": "My Skills",
+  "PARAGRAPH_SKILLS_01": "these are some of the languages ​​/ frameworks / libraries that I know and continue to learn more and more every day These are not all that I know as I mentioned before I am self-taught and I like to learn new things if you like to contact me for more details of technologies that I know or that I am learning you can do it through me",
+  "PARAGRAPH_SKILLS_02": "or through this link",
+  "LINK_SKILLS": "Contact",
+
+  "TITLE_CONTACT": "Get in touch",
+  "LABEL_01": "Name",
+  "PLACEHOLDER_01": "Please enter your name",
+  "LABEL_02": "Email",
+  "PLACEHOLDER_02": "Please enter your email",
+  "LABEL_03": "Message",
+  "PLACEHOLDER_03": "Please enter the message",
+  "BUTTON_CONTACT": "Send message",
+
+  "ERROR_01_NAME": "The name field is required",
+  "ERROR_02_NAME": "The name field must have at least 3 characters",
+  "ERROR_01_EMAIL": "The email field is required",
+  "ERROR_02_EMAIL": "The email field is not valid example@gmail.com",
+  "ERROR_01_MESSAGE": "The message field is required",
+  "ERROR_02_MESSAGE": "The message field must have at least 10 characters",
+  "SUCCESS": "Your message has been send successfully",
+
+  "TITLE_ PROJECTS": "Projects And Goals",
+  "SUBTITLE_01_PROJECTS": "Projects",
+  "PROJECTS_PARAGRAPH_01": "These are some of the projects that I have done if you want to see more you can see them on my github, all these projects are for learning purposes. In my github you can see from my first projects to the most recent",
+  "SUBTITLE_02_PROJECTS": "Goals",
+  "PROJECTS_PARAGRAPH_02": "My dream is to work in one of the big software development companies, that is my biggest goal, my continuous motivation. In addition to continuing to learn every day. I already fulfilled one of my goals, I participated in a regional tournament in Colombia, said tournament is called senasoft, I participated in the category of integral development with technologies such as springboot, hibernate, angular, bootstrap, etc.",
+  "BUTTON_PROJECTS": "View more in Github",
+
+  "MESSAGE_ALERT_TITLE": "Message sent!",
+  "MESSAGE_ALERT_TEXT": "Thank you for your message. I will get back to you as soon as possible."
+}

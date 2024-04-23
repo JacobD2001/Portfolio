@@ -1,0 +1,11 @@
+<div class="card">
+  <h3>{{ study.title }}</h3>
+  <div class="flex">
+    <a [routerLink]="['/certification',study.id]">
+      {{ "BUTTON_DETAILS" | translate }}
+    </a>
+    <a [href]="study.link" download>
+      {{ "DETAILS_A_2" | translate }}
+    </a>
+  </div>
+</div>

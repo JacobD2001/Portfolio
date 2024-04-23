@@ -1,0 +1,77 @@
+<div class="container-home {{ storedTheme }}" id="home">
+  <div>
+    <h5>{{ "HOME_SUB_01" | translate }}</h5>
+    <h1>John Gualteros</h1>
+    <ngx-typed-js
+      [strings]="['Frontend Developer', 'Backend Developer', 'Fullstack Developer']"
+      [loop]="true"
+      [shuffle]="true"
+      [typeSpeed]="150"
+      [backDelay]="150"
+      [backSpeed]="150"
+      [showCursor]="false"
+
+    >
+      <h3 class="typing"></h3>
+    </ngx-typed-js>
+    <p>
+      {{ "HOME_PARAGRAPH_01" | translate }}
+    </p>
+    <p>
+      {{ "HOME_PARAGRAPH_02" | translate }}
+    </p>
+    <a href="#"
+      ><button class="btn">{{ "BUTTON_HOME" | translate }}</button></a
+    >
+  </div>
+  <div class="image-container">
+    <img
+      src="../../../assets/astronauta.png"
+      alt="Astronauta"
+      width="{{ 350 }}"
+    />
+  </div>
+</div>
+<!-- About -->
+<app-about [storedTheme]="storedTheme"></app-about>
+<!-- skills -->
+<app-skills [storedTheme]="storedTheme"></app-skills>
+<!-- studies -->
+<app-studies [storedTheme]="storedTheme"></app-studies>
+<!-- experience -->
+<app-projects [storedTheme]="storedTheme"></app-projects>
+<!-- contact -->
+<app-contact [storedTheme]="storedTheme"></app-contact>
+<!-- Footer -->
+<footer>
+  <p>{{ "FOOTER" | translate }} <span>&rarr;</span></p>
+  <div
+    id="theme-light-blue"
+    [ngClass]="storedTheme == 'theme-light-blue' ? 'active' : ''"
+    (click)="changeColor('theme-light-blue')"
+  ></div>
+
+  <div
+    id="theme-red"
+    [ngClass]="storedTheme == 'theme-red' ? 'active' : ''"
+    (click)="changeColor('theme-red')"
+  ></div>
+
+  <div
+    id="theme-blue"
+    [ngClass]="storedTheme == 'theme-blue' ? 'active' : ''"
+    (click)="changeColor('theme-blue')"
+  ></div>
+
+  <div
+    id="theme-purple"
+    [ngClass]="storedTheme == 'theme-purple' ? 'active' : ''"
+    (click)="changeColor('theme-purple')"
+  ></div>
+
+  <div
+    id="theme-green"
+    [ngClass]="storedTheme == 'theme-green' ? 'active' : ''"
+    (click)="changeColor('theme-green')"
+  ></div>
+</footer>

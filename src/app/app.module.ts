@@ -19,13 +19,14 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CardProjectComponent } from './components/card-project/card-project.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
+import { AboutVideoComponent } from './components/about-video/about-video.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent, SiteComponent, PageNotFoundComponent, AboutComponent, StudiesComponent, CardStudiesComponent, CertificationDetailComponent, SkillsComponent, ContactComponent, ProjectsComponent, CardProjectComponent, ProjectDetailsComponent],
+  declarations: [AppComponent, SiteComponent, PageNotFoundComponent, AboutComponent, StudiesComponent, CardStudiesComponent, CertificationDetailComponent, SkillsComponent, ContactComponent, ProjectsComponent, CardProjectComponent, ProjectDetailsComponent, AboutVideoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

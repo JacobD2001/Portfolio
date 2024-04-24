@@ -1,17 +1,17 @@
 <div class="card-project">
   <img [src]="project.image" alt="titulo" >
-  <h4>{{ project.name }}</h4>
+   <h4>{{ project.name }}</h4>
   <div class="container-buttons">
     <a [routerLink]="['/project',project.id]"><button>{{ "BUTTON_DETAILS" | translate }}</button></a>
     <a [href]="project.github" target="_blank"><button>Github</button></a>
   </div>
   <p>
-    {{ project.description.slice(0, 100) }}...
+    {{ project.description.slice(0, 200) }}...
   </p>
-  <!-- <div class="list-languages">
-    <div *ngFor="let language of project.technologies" class="language">
-      <p> {{ language }}</p>
-    </div> -->
-  <!-- </div> -->
+  <div class="list-technologies">
+    <div *ngFor="let skill of frontendSkills">
+      <img [src]="skill.image" [alt]="skill.title" />
+    </div>
+  </div>
 </div>
 

@@ -23,16 +23,16 @@ export class ProjectsService {
       github: 'https://github.com/johngualteros/portfolio_personal_angular',
       technologies: ['Angular', 'Typescript', 'Html', 'Sass']
     },
-    {
-      id: 3,
-      name: 'Eskrive',
-      description: 'Questions and answers forum, this project was the senasoft challenge, an administrator creates questions and a user can answer those questions, the architecture is with RESTful.',
-      image: '../../../assets/projects/eskrive.png',
-      github: 'https://github.com/JohnGualteros6402/front_end_desarrollo_integral',
-      technologies: ['Angular', 'Typescript', 'Html', 'Css', 'Bootstrap', 'Java', 'SpringBoot', 'MySql'],
-      secondaryAccount: 'https://github.com/JohnGualteros6402',
-      primaryAccount: 'https://github.com/johngualteros'
-    }
+    // {
+    //   id: 3,
+    //   name: 'Eskrive',
+    //   description: 'Questions and answers forum, this project was the senasoft challenge, an administrator creates questions and a user can answer those questions, the architecture is with RESTful.',
+    //   image: '../../../assets/projects/eskrive.png',
+    //   github: 'https://github.com/JohnGualteros6402/front_end_desarrollo_integral',
+    //   technologies: ['Angular', 'Typescript', 'Html', 'Css', 'Bootstrap', 'Java', 'SpringBoot', 'MySql'],
+    //   secondaryAccount: 'https://github.com/JohnGualteros6402',
+    //   primaryAccount: 'https://github.com/johngualteros'
+    // }
   ];
   constructor() { }
 

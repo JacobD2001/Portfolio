@@ -756,16 +756,9 @@ $color-5: rgb(104, 245, 132);
   text-align: justify;
   margin: 0 auto;
   h1 {
-    font-size: 2.8rem;
-    color: $color;
+    font-size: 4.5rem;
     font-weight: 900;
-    text-align: center;
-  }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+    margin-bottom: 1rem;
     color: $color-theme;
   }
   h3 {
@@ -796,6 +789,22 @@ $color-5: rgb(104, 245, 132);
       width: 100%;
       transition: all 0.5s linear;
       height: 100%;
+
+      .list-technologies {
+        display: flex; // Use flexbox to align language icons horizontally
+        flex-wrap: wrap; // Allow icons to wrap onto the next line if space is insufficient
+        justify-content: center; // Center the icons within the container
+        gap: 10px; // Maintain a gap between icons for clarity
+        margin-top: 10px;
+        width: 100%; // Space between the description and the language list
+    
+        img {
+          width: 30px; // Set a fixed size for icons
+          height: 30px; // Set a fixed size for icons
+          object-fit: cover; // Ensure the images cover the area properly without distortion
+          border-radius: 50%; // Optional: makes the icons circular
+        }
+      }
       h4 {
         font-size: 1.5rem;
         font-weight: 700;

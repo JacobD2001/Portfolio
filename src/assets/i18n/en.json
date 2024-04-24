@@ -19,7 +19,7 @@
 
   "DETAILS_A_1": "Go Back",
   "DETAILS_A_2": "Download",
-  "BUTTON_DETAILS": "See",
+  "BUTTON_DETAILS": "Project",
 
   "TITLE_SKILLS": "Skills",
   "SUBTITLE_SKILLS_BACKEND": "Backend",
@@ -42,7 +42,8 @@
   "ERROR_02_MESSAGE": "The message field must have at least 10 characters",
   "SUCCESS": "Your message has been send successfully",
 
-  "TITLE_ PROJECTS": "Projects And Goals",
+  "TITLE_ PROJECTS": "My experience",
+  "SUBTITLE_PROJECTS": "Apart from commercial experience, I have also worked on personal projects. Let's explore them.",
   "SUBTITLE_01_PROJECTS": "Projects",
   "PROJECTS_PARAGRAPH_01": "These are some of the projects that I have done if you want to see more you can see them on my github, all these projects are for learning purposes. In my github you can see from my first projects to the most recent",
   "SUBTITLE_02_PROJECTS": "Goals",

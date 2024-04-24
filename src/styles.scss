@@ -323,6 +323,47 @@ $color-5: rgb(104, 245, 132);
     padding: 0 20px;
   }
 }
+@mixin container-about-video($background, $color, $color-theme) {
+  width: 100%;
+  height: 100vh;
+  background-color: $background;
+  color: $color;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: $color-theme;
+  }
+  iframe{
+    width: 60%;
+    height: 60%;
+  }
+
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 4rem; 
+    }
+    iframe {
+      width: 80%; 
+      height: 40%; 
+    }
+  }
+  @media (max-width: 841px) {
+    h1 {
+      font-size: 2.8rem; 
+    }
+    iframe {
+      width: 80%; 
+      height: 40%; 
+    }
+  }
+}
 @mixin studies_component($background, $color, $color-theme) {
   background-color: $background;
   color: $color;
@@ -960,6 +1001,7 @@ body .container-home.theme-purple {
 body .container-home.theme-green {
   @include container-home($color-light-bg, $color-dark-bg, $color-5);
 }
+
 body .container-about.theme-light-blue {
   @include about-component($color-light-bg, $color-dark-bg, $color-1);
 }
@@ -974,6 +1016,21 @@ body .container-about.theme-purple {
 }
 body .container-about.theme-green {
   @include about-component($color-light-bg, $color-dark-bg, $color-5);
+}
+body .container-about-video.theme-light-blue {
+  @include container-about-video($color-light-bg, $color-dark-bg, $color-1);
+}
+body .container-about-video.theme-red {
+  @include container-about-video($color-light-bg, $color-dark-bg, $color-2);
+}
+body .container-about-video.theme-blue {
+  @include container-about-video($color-light-bg, $color-dark-bg, $color-3);
+}
+body .container-about-video.theme-purple {
+  @include container-about-video($color-light-bg, $color-dark-bg, $color-4);
+}
+body .container-about-video.theme-green {
+  @include container-about-video($color-light-bg, $color-dark-bg, $color-5);
 }
 body .container-studies.theme-light-blue {
   @include studies-component($color-light-bg, $color-dark-bg, $color-1);
@@ -1125,6 +1182,7 @@ body .container-project-details.theme-green {
 .dark .container-home.theme-green {
   @include container-home($color-dark-bg, $color-light-bg, $color-5);
 }
+
 .dark .container-about.theme-light-blue {
   @include about-component($color-dark-bg, $color-light-bg, $color-1);
 }
@@ -1139,6 +1197,21 @@ body .container-project-details.theme-green {
 }
 .dark .container-about.theme-green {
   @include about-component($color-dark-bg, $color-light-bg, $color-5);
+}
+.dark .container-about-video.theme-light-blue{
+  @include container-about-video($color-dark-bg, $color-light-bg, $color-1);
+}
+.dark .container-about-video.theme-red{
+  @include container-about-video($color-dark-bg, $color-light-bg, $color-2);
+}
+.dark .container-about-video.theme-blue{
+  @include container-about-video($color-dark-bg, $color-light-bg, $color-3);
+}
+.dark .container-about-video.theme-purple{
+  @include container-about-video($color-dark-bg, $color-light-bg, $color-4);
+}
+.dark .container-about-video.theme-green{
+  @include container-about-video($color-dark-bg, $color-light-bg, $color-5);
 }
 .dark .container-studies.theme-light-blue {
   @include studies-component($color-dark-bg, $color-light-bg, $color-1);

@@ -1,3 +1,15 @@
-<div class="container-about {{ storedTheme }}" id="about-video" #aboutVideo>
-  <div>learn about bootstrapping</div>
+<div
+  class="container-about-video {{ storedTheme }}"
+  id="about-video"
+  #aboutVideo
+>
+    <h1>{{ "ABOUT_VIDEO_TITLE" | translate}}</h1>
+    <iframe
+      src="https://www.youtube.com/embed/0ksqvzDROUE?si=G4AB4tLgO0up0qGn"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
 </div>

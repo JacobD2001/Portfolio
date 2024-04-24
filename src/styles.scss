@@ -344,7 +344,7 @@ $color-5: rgb(104, 245, 132);
     width: 60%;
     height: 60%;
   }
-
+  
   @media (max-width: 1024px) {
     h1 {
       font-size: 4rem; 
@@ -514,68 +514,42 @@ $color-5: rgb(104, 245, 132);
   color: $color;
   transition: all 0.5s linear;
   display: grid;
-  place-content: center;
-  place-items: center;
-  h1 {
-    font-size: 2.8rem;
-    color: $color;
-    font-weight: 900;
-    text-align: center;
-  }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $color-theme;
-  }
-  h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  p {
-    color: #9f9f9f;
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    text-align: justify;
-  }
+ h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: $color-theme;
+  text-align: center;
+ }
+ h2{
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-align: center;
+ }
   .container-sections-skills {
     display: grid;
     padding: 50px 0;
-    // grid-template-columns: auto 50%;
-    place-content: center;
-    place-items: center;
+    grid-template-columns: 1fr 1fr; 
     width: 80%;
     margin: 0 auto;
-    gap: 50px;
     .container-skill-section {
       width: 100%;
       height: 100%;
-      h3 {
-        text-align: center;
-      }
-      a {
-        text-decoration: none;
-        color: $color-theme;
-        font-weight: 400;
+      text-align: center;
+      &:first-child { 
+        border-right: 2px solid $color-theme; 
       }
       .container-languages {
-        width: 100%;
-        height: auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         place-content: center;
         place-items: center;
-        gap: 10px;
+        gap: 20px;
         img {
           width: 40px;
           height: 40px;
           margin-bottom: 10px;
-        }
-        p {
-          font-weight: bold;
-          color: $color;
         }
         .container-language {
           width: 100%;
@@ -588,6 +562,7 @@ $color-5: rgb(104, 245, 132);
       }
     }
   }
+
   @media (max-width: 900px) {
     .container-sections-skills {
       grid-template-columns: 1fr;
@@ -595,15 +570,31 @@ $color-5: rgb(104, 245, 132);
       width: 100%;
       padding: 30px;
       text-align: center;
-      p {
-        text-align: center;
-        font-size: 1rem;
+
+      .container-skill-section {
+        &:first-child {
+          border-right: none;  
+        }
       }
+    }
+    h2{
+      margin-top: 30px;
     }
   }
   @media (max-width: 400px) {
+    .container-sections-skills {
+      .container-skill-section {
+        &:first-child {
+          border-right: none;  
+        }
+      }
+    }
     h1 {
-      font-size: 2rem;
+      font-size: 2.8rem;
+    }
+    h2{
+      margin-top: 30px;
+      font-size: 1.8rem;
     }
   }
 }

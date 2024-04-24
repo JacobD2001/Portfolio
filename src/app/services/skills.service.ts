@@ -9,99 +9,128 @@ export class SkillsService {
   skills: Skill[] = [
     {
       id: 1,
-      title: 'Html',
-      image: '../../assets/logos_portfolio/html.png'
+      title: 'Angular',
+      image: '../../assets/logos_portfolio/Angular.png',
+      category: 'frontend'
     },
     {
       id: 2,
-      title: 'Css',
-      image: '../../assets/logos_portfolio/css.webp'
+      title: 'Typescript',
+      image: '../../assets/logos_portfolio/Typescript.svg',
+      category: 'frontend'
     },
     {
       id: 3,
-      title: 'Sass',
-      image: '../../assets/logos_portfolio/sass.png'
+      title: 'Javascript',
+      image: '../../assets/logos_portfolio/JavaScript.png',
+      category: 'frontend'
     },
     {
       id: 4,
-      title: 'Javascript',
-      image: '../../assets/logos_portfolio/JavaScript.png'
+      title: 'Html',
+      image: '../../assets/logos_portfolio/html.png',
+      category: 'frontend'
     },
     {
       id: 5,
-      title: 'Bootstrap',
-      image: '../../assets/logos_portfolio/Bootstrap.png'
+      title: 'Sass',
+      image: '../../assets/logos_portfolio/sass.png',
+      category: 'frontend'
     },
     {
       id: 6,
-      title: 'Tailwind',
-      image: '../../assets/logos_portfolio/Tailwind.png'
+      title: 'Css',
+      image: '../../assets/logos_portfolio/css.webp',
+      category: 'frontend'
     },
     {
       id: 7,
-      title: 'Typescript',
-      image: '../../assets/logos_portfolio/Typescript.svg'
+      title: 'Bootstrap',
+      image: '../../assets/logos_portfolio/Bootstrap.png',
+      category: 'frontend'
     },
     {
-      id: 8,
-      title: 'Angular',
-      image: '../../assets/logos_portfolio/Angular.png'
+      id: 6,
+      title: 'c#',
+      image: '../../assets/logos_portfolio/csharp.png',
+      category: 'backend'
     },
     {
       id: 9,
-      title: 'MySQL',
-      image: '../../assets/logos_portfolio/MySQL.png'
+      title: '.NET',
+      image: '../../assets/logos_portfolio/NET.png',
+      category: 'backend'
     },
     {
       id: 10,
-      title: 'PostgreSQL',
-      image: '../../assets/logos_portfolio/postgre.png'
+      title: 'SQL',
+      image: '../../assets/logos_portfolio/SQL.png',
+      category: 'backend'
     },
     {
       id: 11,
-      title: 'MongoDB',
-      image: '../../assets/logos_portfolio/mongo.png'
+      title: 'Azure',
+      image: '../../assets/logos_portfolio/azure.png',
+      category: 'backend'
     },
     {
       id: 12,
-      title: 'Java',
-      image: '../../assets/logos_portfolio/java.png'
+      title: 'Entity Framework',
+      image: '../../assets/logos_portfolio/EFCore.png',
+      category: 'backend'
     },
     {
       id: 13,
-      title: 'Python',
-      image: '../../assets/logos_portfolio/python.png'
+      title: 'Azure Functions',
+      image: '../../assets/logos_portfolio/azureFunc.png',
+      category: 'backend'
     },
     {
       id: 14,
-      title: 'Spring',
-      image: '../../assets/logos_portfolio/spring.png'
+      title: 'OpenAPI',
+      image: '../../assets/logos_portfolio/openAPI.png',
+      category: 'backend'
     },
     {
       id: 15,
-      title: 'Django',
-      image: '../../assets/logos_portfolio/django.png'
+      title: 'REST',
+      image: '../../assets/logos_portfolio/rest.webp',
+      category: 'backend'
     },
     {
       id: 16,
       title: 'Git',
-      image: '../../assets/logos_portfolio/git.png'
+      image: '../../assets/logos_portfolio/git.png',
+      category: 'backend'
     },
     {
       id: 17,
       title: 'Docker',
-      image: '../../assets/logos_portfolio/docker.webp'
+      image: '../../assets/logos_portfolio/docker.webp',
+      category: 'backend'
     },
     {
       id: 18,
-      title: 'AWS',
-      image: '../../assets/logos_portfolio/aws.png'
+      title: 'Web api',
+      image: '../../assets/logos_portfolio/webApi.png',
+      category: 'backend'
+    },
+    {
+      id: 19,
+      title: 'ASP.NET Core',
+      image: '../../assets/logos_portfolio/ASP.png',
+      category: 'backend'
     }
-
   ];
+
   constructor() { }
 
-  getListOfSkills(): Skill[]{
-    return this.skills;
+  getFrontendSkills(): Skill[]{
+    return this.skills.filter(skill => skill.category === 'frontend');
   }
+
+  getBackendSkills(): Skill[]{
+    return this.skills.filter(skill => skill.category === 'backend');
+  }
+
 }

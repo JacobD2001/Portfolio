@@ -10,13 +10,13 @@ import { SkillsService } from 'src/app/services/skills.service';
 export class SkillsComponent implements OnInit {
 
   @Input() storedTheme: any;
-  skills: Skill[];
+  frontendSkills: Skill[];
+  backendSkills: Skill[];
+
   constructor(private skillsService: SkillsService) { }
+
   ngOnInit(): void {
-    this.skills = this.getListOfSkills();
-    console.log(this.skills);
-  }
-  getListOfSkills(){
-    return this.skillsService.getListOfSkills();
+    this.frontendSkills = this.skillsService.getFrontendSkills();
+    this.backendSkills = this.skillsService.getBackendSkills();
   }
 }

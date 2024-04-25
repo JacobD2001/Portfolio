@@ -776,12 +776,37 @@ $color-5: rgb(104, 245, 132);
   justify-content: center;
   text-align: justify;
   margin: 0 auto;
-  h1 {
+  h1{
+    color: $color-theme;
+  }
+  h1, h2 {
+    text-align: center;
+    width: 100%;
     font-size: 4.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    color: $color-theme;
+    @media (max-width: 900px) {
+      font-size: 3rem;
+      padding: 0 10px;
+    }
   }
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    @media (max-width: 900px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .container-projects-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
   .container-projects-cards {
     width: 85%;
     height: auto;
@@ -791,6 +816,7 @@ $color-5: rgb(104, 245, 132);
     place-items: center;
     gap: 10px;
     padding: 20px;
+
     .card-project {
       border: 2px solid $color-theme;
       border-radius: 5px;
@@ -846,10 +872,10 @@ $color-5: rgb(104, 245, 132);
           }
         }
         button.left-arrow {
-          left: 0;
+          left: -15px;
         }
         button.right-arrow {
-          right: 0;
+          right: -15px;
         }
       }
 
@@ -896,6 +922,11 @@ $color-5: rgb(104, 245, 132);
       width: 80%;
     }
   }
+  // @media (max-width: 900px) {
+  //   h1,h2 {
+  //     width: 80%;
+  //   }
+  // }
 }
 @mixin project-details($background, $color, $color-theme) {
   width: 100%;

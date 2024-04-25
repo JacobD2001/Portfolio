@@ -7,6 +7,7 @@ TODO:
 ---------------
 6. download cv button
 7. Change all data
+fix font awesome
 8. translation
 9. cleanup
 10. check every aspect

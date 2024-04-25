@@ -1,11 +1,10 @@
 {
-  "SUBTITLE_404" : "404 Page not found",
-  "PARAGRAPH_404" : "The page you are looking for does not exist.",
+  "SUBTITLE_404" : "Ooops... Page not found!",
+  "PARAGRAPH_404" : "Page not found",
   "LINK_404" : "Go to home page",
   "FOOTER" : "Try This",
 
   "HOME_SUB_01" : "Hi I'm",
-  "HOME_SUB_02" : "Full Stack Web Developer",
   "HOME_PARAGRAPH_01" : "I am a full stack web developer with experience developing",
   "HOME_PARAGRAPH_02" : "web applications both on the backend and frontend side",
   "BUTTON_HOME" : "Download CV",
@@ -13,6 +12,7 @@
   "ABOUT_TITLE": "About Me",
   "ABOUT_PARAGRAPH": "I love empowering cutting-edge technologies into real-world applications. I help both startups, small businesses and established companies to develop their digital products. But let the video below tell you more about me.",
   "ABOUT_CLICK": "watch the video!",
+
   "STUDIES_TITLE": "Certification",
   "STUDIES_SUBTITLE": "Apart from college, I like to keep learning. Here are some of the certifications I have obtained.",
 
@@ -22,7 +22,6 @@
   "DETAILS_A_2": "Download",
   "BUTTON_CERTIFICATION_DETAILS": "Certificate",
    
-
   "TITLE_SKILLS": "Skills",
   "SUBTITLE_SKILLS_BACKEND": "Backend",
   "SUBTITLE_SKILLS_FRONTEND": "Frontend",
@@ -46,11 +45,6 @@
 
   "TITLE_ PROJECTS": "My experience",
   "SUBTITLE_PROJECTS": "Apart from commercial experience, I have also worked on personal projects. Let's explore them.",
-  "SUBTITLE_01_PROJECTS": "Projects",
-  "PROJECTS_PARAGRAPH_01": "These are some of the projects that I have done if you want to see more you can see them on my github, all these projects are for learning purposes. In my github you can see from my first projects to the most recent",
-  "SUBTITLE_02_PROJECTS": "Goals",
-  "PROJECTS_PARAGRAPH_02": "My dream is to work in one of the big software development companies, that is my biggest goal, my continuous motivation. In addition to continuing to learn every day. I already fulfilled one of my goals, I participated in a regional tournament in Colombia, said tournament is called senasoft, I participated in the category of integral development with technologies such as springboot, hibernate, angular, bootstrap, etc.",
-  "BUTTON_PROJECTS": "View more in Github",
   "BUTTON_PROJECT_DETAILS": "Project",
 
   "MESSAGE_ALERT_TITLE": "Message sent!",

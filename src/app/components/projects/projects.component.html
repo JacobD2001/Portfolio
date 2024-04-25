@@ -1,6 +1,8 @@
 <div class="container-projects {{ storedTheme }}">
+  <div class=".container-projects-title">
   <h1>{{ "TITLE_ PROJECTS" | translate }}</h1>
   <h2>{{ "SUBTITLE_PROJECTS" | translate}}</h2>
+  </div>
   <div class="container-projects-cards">
     <app-card-project *ngFor="let project of projects" [project]="project"></app-card-project>
   </div>

@@ -1,9 +1,8 @@
 <div class="card-project">
-  <!-- <img [src]="project.image" alt="titulo" > -->
   <div class="image-slider">
-    <button class="left-arrow" (click)="showPreviousImage()">&#10094;</button> <!-- Left arrow -->
+    <button class="left-arrow" (click)="showPreviousImage()">&#10094;</button> 
     <img [src]="project.images[currentImageIndex]" alt="{{ project.name }}">
-    <button class="right-arrow" (click)="showNextImage()">&#10095;</button> <!-- Right arrow -->
+    <button class="right-arrow" (click)="showNextImage()">&#10095;</button> 
   </div>
    <h4>{{ project.name }}</h4>
    <p>

@@ -12,39 +12,21 @@ export class StudiesService {
   studies: Studies[] = [
     {
       id: 1,
-      title: 'Php',
+      title: 'Mta Security Fundamentals',
       image: '../../assets/certifications/php.png',
-      link: '../../assets/certifications/php.png',
+      link: 'https://www.credly.com/badges/97c20b3a-bc7c-4656-87d8-e52577332a96/public_url',
     },
     {
       id: 2,
-      title: 'Php',
+      title: 'MTA Database Administration',
       image: '../../assets/certifications/php.png',
-      link: '../../assets/certifications/php.png',
+      link: 'https://www.credly.com/badges/385e97bd-e2ea-4997-89b5-aa714fef74e3/public_url',
     },
     {
       id: 3,
-      title: 'Php',
+      title: 'MTA Software Development',
       image: '../../assets/certifications/php.png',
-      link: '../../assets/certifications/php.png',
-    },
-    {
-      id: 4,
-      title: 'Php',
-      image: '../../assets/certifications/php.png',
-      link: '../../assets/certifications/php.png',
-    },
-    {
-      id: 5,
-      title: 'Php',
-      image: '../../assets/certifications/php.png',
-      link: '../../assets/certifications/php.png',
-    },
-    {
-      id: 6,
-      title: 'Php',
-      image: '../../assets/certifications/php.png',
-      link: '../../assets/certifications/php.png',
+      link: 'https://www.credly.com/badges/ff9c7db0-2dc8-4f2e-8e15-fc84ec27f7ff/public_url',
     },
   ];
 

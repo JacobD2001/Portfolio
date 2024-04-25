@@ -2,7 +2,7 @@
   <h3>{{ study.title }}</h3>
   <div class="">
     <img [src]="study.image" alt="{{ study.title }}" />
-    <a [routerLink]="['/certification',study.id]">
+    <a [href]="study.link" target="_blank">
       {{ "BUTTON_CERTIFICATION_DETAILS" | translate }}
     </a>
   </div>

@@ -64,7 +64,7 @@ export class SkillsService {
     {
       id: 10,
       title: 'SQL',
-      image: '../../assets/logos_portfolio/SQL.png',
+      image: '../../assets/logos_portfolio/sql.svg',
       category: 'backend'
     },
     {

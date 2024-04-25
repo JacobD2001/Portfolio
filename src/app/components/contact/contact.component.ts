@@ -39,7 +39,7 @@ export class ContactComponent implements OnInit {
   async onSubmit(contactForm: NgForm) {
     if (contactForm.valid) {
       const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-      this.http.post('https://formspree.io/f/xjvzrknq',
+      this.http.post('https://formspree.io/f/myyrlarp',
         { name: this.contact.name, replyto: this.contact.email, message: this.contact.message },
         { 'headers': headers }).subscribe(
           response => {

@@ -1,13 +1,18 @@
 <div class="card-project">
-  <img [src]="project.image" alt="titulo" >
+  <!-- <img [src]="project.image" alt="titulo" > -->
+  <div class="image-slider">
+    <button class="left-arrow" (click)="showPreviousImage()">&#10094;</button> <!-- Left arrow -->
+    <img [src]="project.images[currentImageIndex]" alt="{{ project.name }}">
+    <button class="right-arrow" (click)="showNextImage()">&#10095;</button> <!-- Right arrow -->
+  </div>
    <h4>{{ project.name }}</h4>
+   <p>
+    {{ project.description.slice(0, 200) }}...
+  </p>
   <div class="container-buttons">
     <a [routerLink]="['/project',project.id]"><button>{{ "BUTTON_DETAILS" | translate }}</button></a>
     <a [href]="project.github" target="_blank"><button>Github</button></a>
   </div>
-  <p>
-    {{ project.description.slice(0, 200) }}...
-  </p>
   <div class="list-technologies">
     <div *ngFor="let skill of projectTechnologies">
       <img [src]="skill.image" [alt]="skill.title" />

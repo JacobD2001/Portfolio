@@ -340,27 +340,27 @@ $color-5: rgb(104, 245, 132);
     margin-bottom: 1rem;
     color: $color-theme;
   }
-  iframe{
+  iframe {
     width: 60%;
     height: 60%;
   }
-  
+
   @media (max-width: 1024px) {
     h1 {
-      font-size: 4rem; 
+      font-size: 4rem;
     }
     iframe {
-      width: 80%; 
-      height: 40%; 
+      width: 80%;
+      height: 40%;
     }
   }
   @media (max-width: 841px) {
     h1 {
-      font-size: 2.8rem; 
+      font-size: 2.8rem;
     }
     iframe {
-      width: 80%; 
-      height: 40%; 
+      width: 80%;
+      height: 40%;
     }
   }
 }
@@ -514,31 +514,31 @@ $color-5: rgb(104, 245, 132);
   color: $color;
   transition: all 0.5s linear;
   display: grid;
- h1 {
-  font-size: 4.5rem;
-  font-weight: 900;
-  margin-bottom: 1rem;
-  color: $color-theme;
-  text-align: center;
- }
- h2{
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 1rem;
-  text-align: center;
- }
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: $color-theme;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
   .container-sections-skills {
     display: grid;
     padding: 50px 0;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     width: 80%;
     margin: 0 auto;
     .container-skill-section {
       width: 100%;
       height: 100%;
       text-align: center;
-      &:first-child { 
-        border-right: 2px solid $color-theme; 
+      &:first-child {
+        border-right: 2px solid $color-theme;
       }
       .container-languages {
         display: grid;
@@ -573,11 +573,11 @@ $color-5: rgb(104, 245, 132);
 
       .container-skill-section {
         &:first-child {
-          border-right: none;  
+          border-right: none;
         }
       }
     }
-    h2{
+    h2 {
       margin-top: 30px;
     }
   }
@@ -585,14 +585,14 @@ $color-5: rgb(104, 245, 132);
     .container-sections-skills {
       .container-skill-section {
         &:first-child {
-          border-right: none;  
+          border-right: none;
         }
       }
     }
     h1 {
       font-size: 2.8rem;
     }
-    h2{
+    h2 {
       margin-top: 30px;
       font-size: 1.8rem;
     }
@@ -761,14 +761,6 @@ $color-5: rgb(104, 245, 132);
     margin-bottom: 1rem;
     color: $color-theme;
   }
-  h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin: 20px 0;
-  }
-  p {
-    width: 60%;
-  }
   .container-projects-cards {
     width: 85%;
     height: auto;
@@ -779,7 +771,7 @@ $color-5: rgb(104, 245, 132);
     gap: 10px;
     padding: 20px;
     .card-project {
-      border: 2px solid $color-theme;
+      //border: 2px solid $color-theme;
       border-radius: 5px;
       padding: 10px;
       display: flex;
@@ -791,20 +783,55 @@ $color-5: rgb(104, 245, 132);
       height: 100%;
 
       .list-technologies {
-        display: flex; // Use flexbox to align language icons horizontally
-        flex-wrap: wrap; // Allow icons to wrap onto the next line if space is insufficient
-        justify-content: center; // Center the icons within the container
-        gap: 10px; // Maintain a gap between icons for clarity
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
         margin-top: 10px;
-        width: 100%; // Space between the description and the language list
-    
+        width: 100%;
+
         img {
-          width: 30px; // Set a fixed size for icons
-          height: 30px; // Set a fixed size for icons
-          object-fit: cover; // Ensure the images cover the area properly without distortion
-          border-radius: 50%; // Optional: makes the icons circular
+          width: 30px;
+          height: 30px;
+          object-fit: cover;
         }
       }
+
+      .image-slider {
+        position: relative;
+        width: calc(100% - 40px);
+        padding: 20px;
+        height: 0 auto;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+          object-fit: cover;
+        }
+        button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: transparent;
+          border: none;
+          color: $color-theme;
+          font-size: 40px;
+          cursor: pointer;
+          outline: none;
+
+          &:hover {
+            color: darken($color-theme, 20%);
+          }
+        }
+        button.left-arrow {
+          left: 0;
+        }
+        button.right-arrow {
+          right: 0;
+        }
+      }
+
       h4 {
         font-size: 1.5rem;
         font-weight: 700;
@@ -1198,19 +1225,19 @@ body .container-project-details.theme-green {
 .dark .container-about.theme-green {
   @include about-component($color-dark-bg, $color-light-bg, $color-5);
 }
-.dark .container-about-video.theme-light-blue{
+.dark .container-about-video.theme-light-blue {
   @include container-about-video($color-dark-bg, $color-light-bg, $color-1);
 }
-.dark .container-about-video.theme-red{
+.dark .container-about-video.theme-red {
   @include container-about-video($color-dark-bg, $color-light-bg, $color-2);
 }
-.dark .container-about-video.theme-blue{
+.dark .container-about-video.theme-blue {
   @include container-about-video($color-dark-bg, $color-light-bg, $color-3);
 }
-.dark .container-about-video.theme-purple{
+.dark .container-about-video.theme-purple {
   @include container-about-video($color-dark-bg, $color-light-bg, $color-4);
 }
-.dark .container-about-video.theme-green{
+.dark .container-about-video.theme-green {
   @include container-about-video($color-dark-bg, $color-light-bg, $color-5);
 }
 .dark .container-studies.theme-light-blue {

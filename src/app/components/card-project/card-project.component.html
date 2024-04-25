@@ -9,7 +9,7 @@
     {{ project.description.slice(0, 200) }}...
   </p>
   <div class="container-buttons">
-    <a [routerLink]="['/project',project.id]"><button>{{ "BUTTON_DETAILS" | translate }}</button></a>
+    <a [routerLink]="['/project',project.id]"><button>{{ "BUTTON_PROJECT_DETAILS" | translate }}</button></a>
     <a [href]="project.github" target="_blank"><button>Github</button></a>
   </div>
   <div class="list-technologies">

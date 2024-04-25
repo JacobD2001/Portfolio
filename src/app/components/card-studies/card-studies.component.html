@@ -1,8 +1,9 @@
 <div class="card">
   <h3>{{ study.title }}</h3>
-  <div class="flex">
+  <div class="">
+    <img [src]="study.image" alt="{{ study.title }}" />
     <a [routerLink]="['/certification',study.id]">
-      {{ "BUTTON_DETAILS" | translate }}
+      {{ "BUTTON_CERTIFICATION_DETAILS" | translate }}
     </a>
     <a [href]="study.link" download>
       {{ "DETAILS_A_2" | translate }}

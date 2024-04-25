@@ -921,18 +921,18 @@ $color-5: rgb(104, 245, 132);
     font-weight: 700;
     margin-bottom: 20px;
   }
-  .list-languages {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    place-content: center;
-    place-items: center;
+  .list-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    width: 60%;
-    p {
-      font-size: 1.2rem;
-      transition: all 0.5s linear;
-      font-weight: 700;
-      color: $color-theme;
+    margin-top: 10px;
+    width: 100%;
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
     }
   }
   @media (max-width: 768px) {

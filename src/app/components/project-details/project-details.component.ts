@@ -16,8 +16,9 @@ export class ProjectDetailsComponent implements OnInit {
   id!: number;
   storedTheme?: string | null =
     localStorage.getItem('theme-color') || 'theme-blue';
-  projects?: Project[];
+  projects: Project[];
   projectTechnologies: Skill[];
+  currentImageIndex: number = 0;
 
 
   constructor(
@@ -30,6 +31,18 @@ export class ProjectDetailsComponent implements OnInit {
     this.id = this.route.snapshot.params['id'];
     this.projects = this.projectsService.getProjectById(this.id);
     this.projectTechnologies = this.skillsService.getSkillsByIds(this.projects[0].technologiesIds);
+  }
+
+  showNextImage(): void {
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.projects[0].images.length;
+  }
+
+  showPreviousImage(): void {
+    if (this.currentImageIndex === 0) {
+      this.currentImageIndex = this.projects[0].images.length - 1;
+    } else {
+      this.currentImageIndex -= 1;
+    }
   }
 
   changeColor(theme: string) {

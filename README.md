@@ -1,3 +1,11 @@
 TODO: 
-1. Learn what does it mean that app is bootstraped and how to customize styles
-2. Fix link for watching the video
+1. Fix link for watching the video
+2. Add courusel for images in project card + responsivness chceck css
+3. adjust project details cuz it looks like shit
+4. adjust studies and certifications cuz it looks like shit(these from microsoft with link no download or anything)
+5. form logic 
+6. download cv button
+7. Change all data
+8. translation
+9. cleanup
+10. check every aspect

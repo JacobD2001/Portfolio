@@ -4,7 +4,7 @@ export interface Project{
   description: string;
   image: string;
   github: string;
-  technologies: string[];
   secondaryAccount?: string;
   primaryAccount?: string;
+  technologiesIds: number[];
 }

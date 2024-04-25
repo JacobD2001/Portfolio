@@ -2,26 +2,27 @@ import { Injectable } from '@angular/core';
 import { Project } from '../interfaces/project';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProjectsService {
-
   projects: Project[] = [
     {
       id: 1,
       name: 'Weather App',
-      description: 'Web application that shows the weather of a city through a search engine made in django using the requests library to make http requests with the python programming language.',
+      description:
+        'Web application that shows the weather of a city through a search engine made in django using the requests library to make http requests with the python programming language.',
       image: '../../../assets/projects/weather_ app.png',
       github: 'https://github.com/johngualteros/climate_app',
-      technologies: ['Django', 'Python', 'Html', 'Css', 'Bootstrap'],
+      technologiesIds: [1, 2, 3, 4,],
     },
     {
       id: 2,
       name: 'Portfolio (this project)',
-      description: 'This is my personal portfolio, made with angular with a lot of love and dedication. It is fully responsive. For this project, I used several libraries offered by Angular. includes dark mode and theme selector such as red, blue etc.',
+      description:
+        'This is my personal portfolio, made with angular with a lot of love and dedication. It is fully responsive. For this project, I used several libraries offered by Angular. includes dark mode and theme selector such as red, blue etc.',
       image: '../../../assets/portoflio_01.jpg',
       github: 'https://github.com/johngualteros/portfolio_personal_angular',
-      technologies: ['Angular', 'Typescript', 'Html', 'Sass']
+      technologiesIds: [10, 11, 12, 13, 14],
     },
     // {
     //   id: 3,
@@ -34,12 +35,12 @@ export class ProjectsService {
     //   primaryAccount: 'https://github.com/johngualteros'
     // }
   ];
-  constructor() { }
+  constructor() {}
 
   getProjects(): Project[] {
     return this.projects;
   }
-  getProjectById(id: number){
-    return this.projects.filter(project => project.id == id);
+  getProjectById(id: number) {
+    return this.projects.filter((project) => project.id == id);
   }
 }

@@ -9,7 +9,7 @@
     {{ project.description.slice(0, 200) }}...
   </p>
   <div class="list-technologies">
-    <div *ngFor="let skill of frontendSkills">
+    <div *ngFor="let skill of projectTechnologies">
       <img [src]="skill.image" [alt]="skill.title" />
     </div>
   </div>

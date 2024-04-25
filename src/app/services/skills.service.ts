@@ -133,4 +133,8 @@ export class SkillsService {
     return this.skills.filter(skill => skill.category === 'backend');
   }
 
+  getSkillsByIds(ids: number[]): Skill[]{
+    return this.skills.filter(skill => ids.includes(skill.id));
+  }
+
 }

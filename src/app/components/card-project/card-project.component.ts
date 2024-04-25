@@ -11,12 +11,12 @@ import { SkillsService } from 'src/app/services/skills.service';
 export class CardProjectComponent implements OnInit {
 
   @Input() project: Project;
-  frontendSkills: Skill[];
+  projectTechnologies: Skill[];
 
   constructor(private skillsService: SkillsService) { }
 
   ngOnInit(): void {
-    this.frontendSkills = this.skillsService.getFrontendSkills();
+    this.projectTechnologies = this.skillsService.getSkillsByIds(this.project.technologiesIds);
   }
 
 }

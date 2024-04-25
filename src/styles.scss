@@ -922,11 +922,6 @@ $color-5: rgb(104, 245, 132);
       width: 80%;
     }
   }
-  // @media (max-width: 900px) {
-  //   h1,h2 {
-  //     width: 80%;
-  //   }
-  // }
 }
 @mixin project-details($background, $color, $color-theme) {
   width: 100%;

@@ -14,4 +14,12 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollTo(elementId: string, event: Event): void {
+    event.preventDefault();
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
 }

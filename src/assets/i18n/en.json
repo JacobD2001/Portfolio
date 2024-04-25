@@ -11,7 +11,7 @@
 
   "ABOUT_TITLE": "About Me",
   "ABOUT_PARAGRAPH": "I love empowering cutting-edge technologies into real-world applications. I help both startups, small businesses and established companies to develop their digital products. But let the video below tell you more about me.",
-  "ABOUT_CLICK": "watch the video!",
+  "ABOUT_CLICK": "Watch the video!",
 
   "STUDIES_TITLE": "Certification",
   "STUDIES_SUBTITLE": "Apart from college, I like to keep learning. Here are some of the certifications I have obtained.",
@@ -43,7 +43,7 @@
   "ERROR_02_MESSAGE": "The message field must have at least 10 characters",
   "SUCCESS": "Your message has been send successfully",
 
-  "TITLE_ PROJECTS": "My experience",
+  "TITLE_PROJECTS": "My experience",
   "SUBTITLE_PROJECTS": "Apart from commercial experience, I have also worked on personal projects. Let's explore them.",
   "BUTTON_PROJECT_DETAILS": "Project",
 

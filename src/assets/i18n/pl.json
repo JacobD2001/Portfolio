@@ -1,0 +1,52 @@
+{
+  "SUBTITLE_404": "Ups... Strona nie została znaleziona!",
+  "PARAGRAPH_404": "Nie znaleziono strony",
+  "LINK_404": "Przejdź do strony głównej",
+  "FOOTER": "Kliknij to",
+
+  "HOME_SUB_01": "Cześć, jestem",
+  "HOME_PARAGRAPH_01": "Jestem programistą full-stack z doświadczeniem w tworzeniu",
+  "HOME_PARAGRAPH_02": "aplikacji internetowych zarówno po stronie frontendu jak i backendu",
+  "BUTTON_HOME": "Pobierz CV",
+
+  "ABOUT_TITLE": "O mnie",
+  "ABOUT_PARAGRAPH": "Uwielbiam wprowadzać innowacyjne technologie w życie. Pomagam zarówno startupom, małym firmom, jak i dużym korporacjom w rozwoju ich produktów cyfrowych. Ale pozwól, że to wideo poniżej opowie Ci więcej o mnie.",
+  "ABOUT_CLICK": "Obejrzyj wideo!",
+
+  "STUDIES_TITLE": "Certyfikaty",
+  "STUDIES_SUBTITLE": "Oprócz studiów lubię się ciągle rozwijać. Oto niektóre z certyfikatów, które uzyskałem.",
+
+  "ABOUT_VIDEO_TITLE": "Obejrzyj mnie...",
+
+  "DETAILS_A_1": "Wróć",
+  "DETAILS_A_2": "Pobierz",
+  "BUTTON_CERTIFICATION_DETAILS": "Certyfikat",
+   
+  "TITLE_SKILLS": "Umiejętności",
+  "SUBTITLE_SKILLS_BACKEND": "Backend",
+  "SUBTITLE_SKILLS_FRONTEND": "Frontend",
+
+  "TITLE_CONTACT": "Porozmawiajmy",
+  "LABEL_01": "Imię",
+  "PLACEHOLDER_01": "Proszę podać swoje imię",
+  "LABEL_02": "Email",
+  "PLACEHOLDER_02": "Proszę podać swój adres email",
+  "LABEL_03": "Wiadomość",
+  "PLACEHOLDER_03": "Proszę wpisać treść wiadomości",
+  "BUTTON_CONTACT": "Wyślij wiadomość",
+
+  "ERROR_01_NAME": "Pole z imieniem jest wymagane",
+  "ERROR_02_NAME": "Pole z imieniem musi zawierać co najmniej 3 znaki",
+  "ERROR_01_EMAIL": "Pole z adresem email jest wymagane",
+  "ERROR_02_EMAIL": "Niepoprawny adres email, przykład: example@gmail.com",
+  "ERROR_01_MESSAGE": "Pole z treścią wiadomości jest wymagane",
+  "ERROR_02_MESSAGE": "Pole z treścią wiadomości musi zawierać co najmniej 10 znaków",
+  "SUCCESS": "Twoja wiadomość została pomyślnie wysłana",
+
+  "TITLE_PROJECTS": "Moje doświadczenie",
+  "SUBTITLE_PROJECTS": "Oprócz doświadczenia komercyjnego, rozwijam również własne projekty. Oto niektóre z nich.",
+  "BUTTON_PROJECT_DETAILS": "Projekt",
+
+  "MESSAGE_ALERT_TITLE": "Wiadomość wysłana!",
+  "MESSAGE_ALERT_TEXT": "Dziękuję za Twoją wiadomość. Skontaktuję się z Tobą tak szybko, jak to możliwe."
+}

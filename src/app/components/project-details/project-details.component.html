@@ -2,10 +2,11 @@
   <a routerLink="/">{{ "DETAILS_A_1" | translate }}</a>
   <h1>{{ project.name }}</h1>
   <p>{{ project.description }}</p>
-  <!-- <div class="list-languages">
-    <p *ngFor="let language of project.technologies">{{ language }}</p>
-  </div> -->
-  <!-- <img [src]="project.image" alt=""> -->
+  <div class="list-technologies">
+    <div *ngFor="let skill of projectTechnologies">
+      <img [src]="skill.image" [alt]="skill.title" />
+    </div>
+  </div>
   <a [href]="project.github">Github</a>
 </div>
 <!-- Footer -->

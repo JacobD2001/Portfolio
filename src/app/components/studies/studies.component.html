@@ -1,6 +1,8 @@
 <div id="studies" class="container-studies {{ storedTheme }}">
-  <h1>{{ "STUDIES_TITLE" | translate }}</h1>
-  <h2>{{ "STUDIES_SUBTITLE" | translate}}</h2>
+  <div class="container-studies-title">
+    <h1>{{ "STUDIES_TITLE" | translate }}</h1>
+    <h2>{{ "STUDIES_SUBTITLE" | translate}}</h2>
+  </div>
   <div class="container-cards">
     <app-card-studies *ngFor="let study of studies" [study]="study"></app-card-studies>
   </div>

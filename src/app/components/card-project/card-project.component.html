@@ -12,6 +12,7 @@
     <a [routerLink]="['/project',project.id]"><button><i class="fa-solid fa-code"></i>{{ "BUTTON_PROJECT_DETAILS" | translate }}</button></a>
     <a [href]="project.github" target="_blank"><button><i class="fa-brands fa-github"></i> github</button></a>
   </div>
+  <h5>{{"TECHNOLOGIES_LIST_TITLE" | translate}}</h5>
   <div class="list-technologies">
     <div *ngFor="let skill of projectTechnologies">
       <img [src]="skill.image" [alt]="skill.title" />

@@ -993,6 +993,24 @@ $color-5: rgb(104, 245, 132);
       margin-right: 0; 
     }
   }
+  .project-details-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 10px; // This is the margin for larger screens
+    }
+  
+
+  }
 
   .list-technologies {
     display: flex;

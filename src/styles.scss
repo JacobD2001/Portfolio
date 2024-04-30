@@ -365,82 +365,114 @@ $color-5: rgb(104, 245, 132);
   }
 }
 @mixin studies_component($background, $color, $color-theme) {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
   background-color: $background;
   color: $color;
-  text-align: center;
+  transition: all 0.5s linear;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-  padding: 50px 0;
+  text-align: justify;
+  margin: 0 auto;
+
+  h1, h2 {
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+    margin-bottom: 1rem;
+
+    @media (max-width: 900px) { 
+      font-size: 3rem;
+      padding: 0 10px;
+    }
+    @media (min-width: 900px) {
+      width: 80%;
+    }
+  }
 
   h1 {
-    font-size: 4.5rem;
-    font-weight: 900;
-    margin-bottom: 1rem;
     color: $color-theme;
+    font-size: 4.5rem;
   }
-  h2{
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-bottom: 1rem;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @media (max-width: 900px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .container-studies-title, .container-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
   }
 
   .container-cards {
-    width: 80%;
+    width: 85%;
+    height: auto;
     transition: all 0.5s linear;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr)); // Changed to 3 cards per row
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
     place-content: center;
     place-items: center;
+    gap: 10px;
+    padding: 20px;
 
     .card {
+      border: 2px solid $color-theme;
+      border-radius: 5px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       width: 100%;
-      max-width: 300px;
-      min-width: 300px;
-      background-color: $background;
-      border: 1px solid $color-theme;
-      padding: 20px;
       transition: all 0.5s linear;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      display: flex; // Added for vertical stacking
-      flex-direction: column; // Added for vertical stacking
-      align-items: center; // Ensure alignment is centered
+      height: 100%;
       img {
         width: 100%;
-        height: 100%;
+        height: auto;
+        object-fit: cover;
       }
+      
+      // .flex {
+      //   display: flex;
+      //   width: 100%; 
+      //   justify-content: space-between; 
+      //   align-items: center;
+      //   margin-top: 10px;
 
-      .flex {
-        display: flex;
-        width: 100%; // Take the full width of the card
-        justify-content: space-between; // Space out the buttons
-        align-items: center;
-        margin-top: 10px;
+      //   a {
+      //     background-color: transparent;
+      //     border: 1px solid $color-theme;
+      //     padding: 5px 10px;
+      //     border-radius: 5px;
+      //     cursor: pointer;
+      //     font-size: 14px;
+      //     color: $color-theme;
+      //     font-weight: 500;
+      //     text-decoration: none;
+      //     transition: all 0.5s linear;
 
-        a {
-          background-color: transparent;
-          border: 1px solid $color-theme;
-          padding: 5px 10px;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 14px;
-          color: $color-theme;
-          font-weight: 500;
-          text-decoration: none;
-          transition: all 0.5s linear;
+      //     &:hover {
+      //       background-color: $color-theme;
+      //       color: $background;
+      //     }
+      //   }
+      // }
+    }
 
-          &:hover {
-            background-color: $color-theme;
-            color: $background;
-          }
-        }
-      }
+    @media(max-width: 864px) {
+      grid-template-columns: 1fr; // Ensure this is within .container-cards
     }
   }
 

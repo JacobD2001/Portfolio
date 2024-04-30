@@ -776,40 +776,48 @@ $color-5: rgb(104, 245, 132);
   justify-content: center;
   text-align: justify;
   margin: 0 auto;
-  h1{
-    color: $color-theme;
-  }
+
   h1, h2 {
     text-align: center;
     width: 100%;
-    font-size: 4.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    @media (max-width: 900px) {
+
+    @media (max-width: 900px) { 
       font-size: 3rem;
       padding: 0 10px;
     }
+    @media (min-width: 900px) {
+      width: 80%;
+    }
   }
+
+  h1 {
+    color: $color-theme;
+    font-size: 4.5rem;
+  }
+
   h2 {
     font-size: 1.8rem;
     font-weight: 700;
+
     @media (max-width: 900px) {
       font-size: 1.4rem;
     }
   }
 
-  .container-projects-title {
+  .container-projects-title, .container-projects-cards {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 2rem;
   }
 
   .container-projects-cards {
-    width: 85%;
     height: auto;
+    width: 85%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-content: center;
@@ -850,12 +858,16 @@ $color-5: rgb(104, 245, 132);
         padding: 20px;
         height: 0 auto;
 
+        img, button {
+          border-radius: 5px;
+        }
+
         img {
           width: 100%;
           height: auto;
-          border-radius: 5px;
           object-fit: cover;
         }
+
         button {
           position: absolute;
           top: 50%;
@@ -871,9 +883,11 @@ $color-5: rgb(104, 245, 132);
             color: darken($color-theme, 20%);
           }
         }
+
         button.left-arrow {
           left: -15px;
         }
+
         button.right-arrow {
           right: -15px;
         }
@@ -884,12 +898,13 @@ $color-5: rgb(104, 245, 132);
         font-weight: 700;
         color: $color-theme;
       }
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 5px;
       }
+
       .container-buttons {
         width: 100%;
         height: auto;
@@ -898,6 +913,7 @@ $color-5: rgb(104, 245, 132);
         justify-content: center;
         gap: 10px;
         margin: 10px 0;
+
         button {
           border: none;
           border-radius: 5px;
@@ -911,13 +927,15 @@ $color-5: rgb(104, 245, 132);
           outline: none;
         }
       }
+
       p {
         width: 100% !important;
         text-align: center;
       }
     }
   }
-  @media (max-width: 900px) {
+
+  @media (max-width: 840px) {
     p {
       width: 80%;
     }

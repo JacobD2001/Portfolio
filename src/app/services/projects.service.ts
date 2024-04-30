@@ -20,7 +20,7 @@ export class ProjectsService {
     },
     {
       id: 2,
-      name: 'App2(moje lub to portfolio)',
+      name: 'App2(xd)',
       description:
         'This is my personal portfolio, made with angular with a lot of love and dedication. It is fully responsive. For this project, I used several libraries offered by Angular. includes dark mode and theme selector such as red, blue etc.',
       images: [

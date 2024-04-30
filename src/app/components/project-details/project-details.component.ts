@@ -5,6 +5,7 @@ import { Skill } from 'src/app/interfaces/skill';
 import { Studies } from 'src/app/interfaces/studies';
 import { ProjectsService } from 'src/app/services/projects.service';
 import { SkillsService } from 'src/app/services/skills.service';
+import { Location} from '@angular/common'
 
 
 @Component({
@@ -24,7 +25,8 @@ export class ProjectDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private projectsService: ProjectsService,
-    private skillsService: SkillsService
+    private skillsService: SkillsService,
+    private location: Location
   ) {}
 
   ngOnInit(): void {
@@ -43,6 +45,10 @@ export class ProjectDetailsComponent implements OnInit {
     } else {
       this.currentImageIndex -= 1;
     }
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
   changeColor(theme: string) {

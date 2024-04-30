@@ -9,8 +9,8 @@
     {{ project.description.slice(0, 200) }}...
   </p>
   <div class="container-buttons">
-    <a [routerLink]="['/project',project.id]"><button>{{ "BUTTON_PROJECT_DETAILS" | translate }}</button></a>
-    <a [href]="project.github" target="_blank"><button>Github</button></a>
+    <a [routerLink]="['/project',project.id]"><button><i class="fa-solid fa-code"></i>{{ "BUTTON_PROJECT_DETAILS" | translate }}</button></a>
+    <a [href]="project.github" target="_blank"><button><i class="fa-brands fa-github"></i> github</button></a>
   </div>
   <div class="list-technologies">
     <div *ngFor="let skill of projectTechnologies">

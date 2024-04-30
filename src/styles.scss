@@ -986,6 +986,8 @@ $color-5: rgb(104, 245, 132);
     font-weight: 700;
     margin-bottom: 20px;
     margin-right: 10px; 
+    cursor: pointer;
+    text-decoration: none;
   
     &:last-child {
       margin-right: 0; 

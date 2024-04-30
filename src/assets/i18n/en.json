@@ -44,8 +44,9 @@
 
   "TITLE_PROJECTS": "My experience",
   "SUBTITLE_PROJECTS": "Apart from commercial experience, I have also worked on personal projects. Let's explore them.",
-  "BUTTON_PROJECT_DETAILS": "Project",
-  "BUTTON_BACK_MAIN": "BACK",
+  "BUTTON_PROJECT_DETAILS": " Project",
+  "BUTTON_BACK_MAIN": "main page",
+  "TECHNOLOGIES_LIST_TITLE": "Built with",
 
   "MESSAGE_ALERT_TITLE": "Message sent!",
   "MESSAGE_ALERT_TEXT": "Thank you for your message. I will get back to you as soon as possible."

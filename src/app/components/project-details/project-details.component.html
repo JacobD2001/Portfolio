@@ -9,14 +9,20 @@
     <img [src]="project.images[currentImageIndex]" alt="{{ project.name }}" />
     <button class="right-arrow" (click)="showNextImage()">&#10095;</button>
   </div>
+  <h4>{{"TECHNOLOGIES_LIST_TITLE" | translate}}</h4>
   <div class="list-technologies">
     <div *ngFor="let skill of projectTechnologies">
       <img [src]="skill.image" [alt]="skill.title" />
     </div>
   </div>
   <div class="project-details-links">
-    <a routerLink="/">{{ "BUTTON_BACK_MAIN" | translate }}</a>
-    <a (click)="goBack()">{{ "BUTTON_BACK_MAIN" | translate }}</a>
+    <a (click)="goBack()">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      {{ "BUTTON_BACK_MAIN" | translate }}
+    </a>
+    <a [href]="project.github"><i class="fa-brands fa-github"></i>
+      github
+    </a>
   </div>
 </div>
 

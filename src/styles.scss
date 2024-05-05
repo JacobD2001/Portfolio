@@ -378,37 +378,31 @@ $color-5: rgb(104, 245, 132);
   text-align: justify;
   margin: 0 auto;
 
-  h1, h2 {
+  h1,
+  h2 {
     text-align: center;
     width: 100%;
     font-weight: 900;
     margin-bottom: 1rem;
-
-    @media (max-width: 900px) { 
-      font-size: 3rem;
-      padding: 0 10px;
-    }
-    @media (min-width: 900px) {
-      width: 80%;
-    }
   }
 
   h1 {
     color: $color-theme;
     font-size: 4.5rem;
+
+    @media (max-width: 900px) {
+      font-size: 3rem;
+    }
   }
 
   h2 {
     font-size: 1.8rem;
     font-weight: 700;
-
-    @media (max-width: 900px) {
-      font-size: 1.4rem;
-    }
   }
 
-  .container-studies-title, .container-cards {
-    width: 100%;
+  .container-studies-title,
+  .container-cards {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,7 +415,7 @@ $color-5: rgb(104, 245, 132);
     height: auto;
     transition: all 0.5s linear;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     place-content: center;
     place-items: center;
     gap: 10px;
@@ -442,37 +436,32 @@ $color-5: rgb(104, 245, 132);
         width: 100%;
         height: auto;
         object-fit: cover;
+        margin-bottom: 10px;
       }
-      
-      // .flex {
-      //   display: flex;
-      //   width: 100%; 
-      //   justify-content: space-between; 
-      //   align-items: center;
-      //   margin-top: 10px;
+      a {
+        background-color: transparent;
+        border: 1px solid $color-theme;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        color: $color-theme;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.5s linear;
 
-      //   a {
-      //     background-color: transparent;
-      //     border: 1px solid $color-theme;
-      //     padding: 5px 10px;
-      //     border-radius: 5px;
-      //     cursor: pointer;
-      //     font-size: 14px;
-      //     color: $color-theme;
-      //     font-weight: 500;
-      //     text-decoration: none;
-      //     transition: all 0.5s linear;
-
-      //     &:hover {
-      //       background-color: $color-theme;
-      //       color: $background;
-      //     }
-      //   }
-      // }
+        &:hover {
+          background-color: $color-theme;
+          color: $background;
+        }
+      }
     }
 
-    @media(max-width: 864px) {
-      grid-template-columns: 1fr; // Ensure this is within .container-cards
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 900px) and (max-width: 1440px) {
+      grid-template-columns: repeat(3, minmax(150px, 1fr));
     }
   }
 
@@ -809,7 +798,8 @@ $color-5: rgb(104, 245, 132);
   text-align: justify;
   margin: 0 auto;
 
-  h1, h2 {
+  h1,
+  h2 {
     text-align: center;
     width: 100%;
     font-weight: 900;
@@ -820,7 +810,7 @@ $color-5: rgb(104, 245, 132);
     color: $color-theme;
     font-size: 4.5rem;
 
-    @media(max-width: 900px) {
+    @media (max-width: 900px) {
       font-size: 3rem;
     }
   }
@@ -828,10 +818,10 @@ $color-5: rgb(104, 245, 132);
   h2 {
     font-size: 1.8rem;
     font-weight: 700;
-
   }
 
-  .container-projects-title, .container-projects-cards {
+  .container-projects-title,
+  .container-projects-cards {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -883,7 +873,8 @@ $color-5: rgb(104, 245, 132);
         padding: 20px;
         height: 0 auto;
 
-        img, button {
+        img,
+        button {
           border-radius: 5px;
         }
 
@@ -1012,12 +1003,12 @@ $color-5: rgb(104, 245, 132);
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 20px;
-    margin-right: 10px; 
+    margin-right: 10px;
     cursor: pointer;
     text-decoration: none;
-  
+
     &:last-child {
-      margin-right: 0; 
+      margin-right: 0;
     }
   }
   .project-details-links {
@@ -1026,17 +1017,15 @@ $color-5: rgb(104, 245, 132);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  
+
     a {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
       text-align: center;
-      margin: 10px; // This is the margin for larger screens
+      margin: 10px;
     }
-  
-
   }
 
   .list-technologies {
@@ -1059,7 +1048,8 @@ $color-5: rgb(104, 245, 132);
     padding: 20px;
     height: 0 auto;
 
-    img, button {
+    img,
+    button {
       border-radius: 5px;
     }
 

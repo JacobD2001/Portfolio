@@ -12,7 +12,7 @@ export class StudiesService {
   studies: Studies[] = [
     {
       id: 1,
-      title: 'Mta Security Fundamentals',
+      title: 'MTA Security Fundamentals',
       image: '../../assets/certifications/php.png',
       link: 'https://www.credly.com/badges/97c20b3a-bc7c-4656-87d8-e52577332a96/public_url',
     },

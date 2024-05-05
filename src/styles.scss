@@ -814,28 +814,21 @@ $color-5: rgb(104, 245, 132);
     width: 100%;
     font-weight: 900;
     margin-bottom: 1rem;
-
-    @media (max-width: 900px) { 
-      font-size: 3rem;
-      padding: 0 10px;
-    }
-    @media (min-width: 900px) {
-      width: 80%;
-    }
   }
 
   h1 {
     color: $color-theme;
     font-size: 4.5rem;
+
+    @media(max-width: 900px) {
+      font-size: 3rem;
+    }
   }
 
   h2 {
     font-size: 1.8rem;
     font-weight: 700;
 
-    @media (max-width: 900px) {
-      font-size: 1.4rem;
-    }
   }
 
   .container-projects-title, .container-projects-cards {

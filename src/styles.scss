@@ -969,6 +969,8 @@ $color-5: rgb(104, 245, 132);
 @mixin project-details($background, $color, $color-theme) {
   width: 100%;
   height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   min-height: 100vh;
   padding: 7% 0;
   background-color: $background;

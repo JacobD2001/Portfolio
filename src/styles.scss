@@ -180,6 +180,7 @@ $color-5: rgb(104, 245, 132);
   display: flex;
   align-items: center;
   transition: all 0.5s linear;
+
   h1 {
     font-size: 4.5rem;
     font-weight: 900;
@@ -247,9 +248,8 @@ $color-5: rgb(104, 245, 132);
       align-items: center;
       padding: 0;
       img{
-        width: 60%;
+        width: 80%;
         height: auto;
-        animation: none;
       }
     }
     .btn {
@@ -258,6 +258,10 @@ $color-5: rgb(104, 245, 132);
   }
   @media (max-width: 841px) {
     padding: 0;
+    .image-container img {
+      width: 40%;
+    
+    }
   }
 }
 @mixin about_component($background, $color, $color-theme) {
@@ -329,12 +333,13 @@ $color-5: rgb(104, 245, 132);
     }
     .image-container {
       order: 0; 
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 0;
       img {
         width: 80%; 
         height: auto;
-        animation: none;
       }
     }
   }
@@ -342,7 +347,7 @@ $color-5: rgb(104, 245, 132);
   @media (max-width: 841px) {
     padding: 0 20px;
     .image-container img {
-      width: 100%;
+      width: 70%;
     }
   }
 }
@@ -421,7 +426,7 @@ $color-5: rgb(104, 245, 132);
 
   h2 {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 200;
   }
 
   .container-studies-title,
@@ -841,7 +846,7 @@ $color-5: rgb(104, 245, 132);
 
   h2 {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 300;
   }
 
   .container-projects-title,

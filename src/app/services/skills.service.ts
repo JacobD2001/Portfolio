@@ -50,7 +50,7 @@ export class SkillsService {
       category: 'frontend'
     },
     {
-      id: 6,
+      id: 8,
       title: 'c#',
       image: '../../assets/logos_portfolio/csharp.png',
       category: 'backend'

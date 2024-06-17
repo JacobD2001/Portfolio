@@ -8,27 +8,27 @@ export class ProjectsService {
   projects: Project[] = [
     {
       id: 1,
-      name: 'App 1(inżynierka)',
+      name: 'Esteti',
       description:
-        'Web application that shows the weather of a city through a search engine made in django using the requests library to make http requests with the python programming language.',
+        'A comprehensive web application for aesthetic medicine clinics, streamlining clinic operations through functionalities for appointment scheduling, client and employee management, service and product catalogs, reporting tools, and more. This user-friendly platform empowers clinics to enhance efficiency and improve patient care.',
       images: [
-        '../../../assets/projects/weather_ app.png',
-        '../../../assets/projects/eskrive.png',
+        '../../../assets/projects/esteti_1.jpg',
+        '../../../assets/projects/esteti_2.jpg',
       ],
-      github: 'https://github.com/johngualteros/climate_app',
-      technologiesIds: [1, 2, 3, 4],
+      github: 'https://github.com/JacobD2001/Esteti',
+      technologiesIds: [8, 10, 11, 12, 13, 14],
     },
     {
       id: 2,
-      name: 'App2(xd)',
+      name: 'Portfolio',
       description:
-        'This is my personal portfolio, made with angular with a lot of love and dedication. It is fully responsive. For this project, I used several libraries offered by Angular. includes dark mode and theme selector such as red, blue etc.',
+        'This personal portfolio showcases my skills in Angular development. Crafted with dedication, it boasts a fully responsive design for seamless access across devices. Leveraging Angular`s rich library ecosystem, I`ve implemented dark mode functionality and a theme selector offering various options like red and blue, allowing users to personalize their experience.',
       images: [
-        '../../../assets/projects/weather_ app.png',
-        '../../../assets/projects/eskrive.png',
+        '../../../assets/projects/portfolio_1.jpg',
+        '../../../assets/projects/portfolio_2.jpg',
       ],
-      github: 'https://github.com/johngualteros/portfolio_personal_angular',
-      technologiesIds: [10, 11, 12, 13, 14],
+      github: 'https://github.com/JacobD2001/Portfolio',
+      technologiesIds: [1, 2, 3, 4],
     },
   ];
   constructor() {}

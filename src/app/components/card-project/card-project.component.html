@@ -10,7 +10,7 @@
   </p>
   <div class="container-buttons">
     <a [routerLink]="['/project',project.id]"><button><i class="fa-solid fa-code"></i>{{ "BUTTON_PROJECT_DETAILS" | translate }}</button></a>
-    <a [href]="project.github" target="_blank"><button><i class="fa-brands fa-github"></i> github</button></a>
+    <a [href]="project.github" target="_blank" rel="noopener noreferrer"><button><i class="fa-brands fa-github"></i> github</button></a>
   </div>
   <h5>{{"TECHNOLOGIES_LIST_TITLE" | translate}}</h5>
   <div class="list-technologies">

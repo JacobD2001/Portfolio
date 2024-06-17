@@ -4,5 +4,5 @@ TODO:
 [x] - certifications site
 [x] - photo in home section visible
 
---WHEN PROJECTS COMPLETED--
-1. [] Change video/projects to my data/links
+--TO DO--
+1. [] Add Video
